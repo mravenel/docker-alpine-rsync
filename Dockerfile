@@ -1,4 +1,4 @@
-FROM alpine:3.6
+FROM mravenel/alpine-bash
 
-RUN apk add --no-cache bash openssh-client rsync \
-    && rm /bin/sh && ln -s /bin/bash /bin/sh
+RUN apk add --no-cache bash openssh-client rsync
+
